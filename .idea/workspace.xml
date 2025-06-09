@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b6b7861-8269-47b3-9f4f-a38152289f19" name="Default Changelist" comment="" />
+    <list default="true" id="2b6b7861-8269-47b3-9f4f-a38152289f19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/C1/MNIST_test.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -154,6 +159,7 @@
       <updated>1736959684567</updated>
       <workItem from="1736961085234" duration="20727000" />
       <workItem from="1749481008062" duration="646000" />
+      <workItem from="1749491742599" duration="8000" />
     </task>
     <servers />
   </component>
