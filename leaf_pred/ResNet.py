@@ -168,7 +168,7 @@ def check_img_info():
 if __name__ == "__main__":
     csv_path = "classify-leaves/train.csv"
     img_dir = "classify-leaves/images"
-    batch_size, lr, num_epochs = 32, 0.005, 50
+    batch_size, lr, num_epochs = 32, 0.001, 50
 
     train_dataset = LeafDataset(csv_path, img_dir, transform=train_transforms)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
