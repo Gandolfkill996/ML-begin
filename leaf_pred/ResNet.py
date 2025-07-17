@@ -27,10 +27,13 @@ class LeafDataset(Dataset):
         self.classes = sorted(self.data_frame['label'].unique())
         self.class_to_idx = {cls: i for i, cls in enumerate(self.classes)}
 
+    def __len__(self):  # 
+        return len(self.data_frame)
+
     def __getitem__(self, idx):
         img_file = os.path.basename(self.data_frame.iloc[idx, 0])
         img_path = os.path.join(self.img_dir, img_file)
-        image = read_image(img_path)  # remove .float()/255.0
+        image = read_image(img_path)
         label_str = self.data_frame.iloc[idx, 1]
         label = self.class_to_idx[label_str]
         if self.transform:
