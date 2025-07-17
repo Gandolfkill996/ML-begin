@@ -163,7 +163,7 @@ def check_img_info():
     # pixel examples: tensor([254, 254, 254], dtype=torch.uint8)
     img = read_image("classify-leaves/images/0.jpg")
     print(f"img shape: {img.shape}")  # output: num of panels, height, width
-    print(f"像素值示例（前5个）: {img[:, 0, 0]}")  # print left-top pixel values
+    print(f"pixel values examples: {img[:, 0, 0]}")  # print left-top pixel values
 
 if __name__ == "__main__":
     csv_path = "classify-leaves/train.csv"
