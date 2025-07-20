@@ -212,7 +212,7 @@ if __name__ == "__main__":
     train_df, val_df = train_test_split(df, test_size=0.2, stratify=df['label'], random_state=42)
     
     train_dataset = LeafDataset(train_df.reset_index(drop=True), img_dir, transform=train_transforms)
-    val_dataset = LeafDataset(val_df.reset_index(drop=True), img_dir, transform=train_transforms)  # 可独立验证 transform
+    val_dataset = LeafDataset(val_df.reset_index(drop=True), img_dir, transform=train_transforms)  #  transform
     
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size)
